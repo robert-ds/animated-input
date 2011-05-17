@@ -14,7 +14,7 @@ body {
 	margin: 100px;
 }
 
-.usrmain {
+.usrname {
 	position: absolute;
 	left: 25%;
 	top: 10px;
@@ -38,11 +38,23 @@ input[type=text]:focus~.usrname {
 input[type=text]:focus~.enter {
 	background-color: #0F1F7A;
 	position: absolute;
-	content: ' ';
+	content: '';
 	height: 1px;
 	right: 45%;
 	top: 42px;
 	transform: scale(5);
 }
 
+.enter {
+	transition: all; ease 0.5s;
+	width: 10.1%;
+	transform: scale(1);
+}
 
+input {
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #cecece;
+	height: 40px;
+	width: 50%;
+}
