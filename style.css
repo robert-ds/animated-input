@@ -23,3 +23,26 @@ body {
 	transition: all 0.5s ease;
 	pointer-events: none;
 }
+
+input {
+	background-color: #f2eee3;
+}
+
+input[type=text]:focus~.usrname {
+	display: block;
+	color: black;
+	top: -20;
+	font-size: 20px;
+}
+
+input[type=text]:focus~.enter {
+	background-color: #0F1F7A;
+	position: absolute;
+	content: ' ';
+	height: 1px;
+	right: 45%;
+	top: 42px;
+	transform: scale(5);
+}
+
+
