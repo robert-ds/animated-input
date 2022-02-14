@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -31,22 +32,22 @@ input {
 input[type=text]:focus~.usrname {
 	display: block;
 	color: black;
-	top: -20;
+	top: -20px;
 	font-size: 20px;
 }
 
 input[type=text]:focus~.enter {
 	background-color: #0F1F7A;
 	position: absolute;
-	content: '';
+	content: ' ';
 	height: 1px;
 	right: 45%;
 	top: 42px;
-	transform: scale(5);
+	transform: scaleX(5);
 }
 
 .enter {
-	transition: all; ease 0.5s;
+	transition: all ease 0.5s;
 	width: 10.1%;
 	transform: scale(1);
 }
@@ -58,3 +59,4 @@ input {
 	height: 40px;
 	width: 50%;
 }
+
